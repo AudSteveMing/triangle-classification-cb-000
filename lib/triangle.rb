@@ -16,7 +16,7 @@ class Triangle
       return :scalene
     elsif (side_a + side_b) < side_c
       begin
-        raise TriangleError  
+        raise TriangleError
       end    
     end
   end
