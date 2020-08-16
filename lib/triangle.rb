@@ -14,11 +14,14 @@ class Triangle
       return :isosceles
     elsif side_a != side_b && side_b != side_c
       return :scalene
+    elsif (side_a + side_b) < side_c
+      begin
+        raise TriangleError      
     end
   end
 
   class TriangleError < StandardError
-    # triangle error code
-  end
+  
+      end
 
 end
